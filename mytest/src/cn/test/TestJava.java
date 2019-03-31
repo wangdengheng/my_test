@@ -5,10 +5,10 @@ import java.util.Arrays;
 public class TestJava {
 
 	/**
-	 * Description :
+	 * Description :as
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ16ÈÕ ÏÂÎç5:55:11
+	 * @date :2019ï¿½ï¿½2ï¿½ï¿½16ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½5:55:11
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -26,9 +26,9 @@ public class TestJava {
 
 	
 	/**
-	 * Description :Ò»µ½Ê®µÄ½×³ËºÍ   
+	 * Description :Ò»ï¿½ï¿½Ê®ï¿½Ä½×³Ëºï¿½   
 	 * @author     :WDH
-	 * @date       :2019Äê3ÔÂ23ÈÕ ÏÂÎç5:11:29
+	 * @date       :2019ï¿½ï¿½3ï¿½ï¿½23ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½5:11:29
 	 * @return   
 	 */
 	public static int jieChen() {
@@ -45,38 +45,38 @@ public class TestJava {
 	}
 	
 	/**
-	 * Description :¿ìËÙÅÅÐò
+	 * Description :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ19ÈÕ ÏÂÎç22:37:41
+	 * @date :2019ï¿½ï¿½2ï¿½ï¿½19ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½22:37:41
 	 * @param arr
 	 */
 	public static void quickSort(int[] arr,int start,int end) {
        if(start<end) {
-    	  //°ÑÊý×éÖÐµÄµÚ0¸öÊý×Ö×öÎª±ê×¼Êý
+    	  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄµï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½×¼ï¿½ï¿½
     	  int stard=arr[start];
-    	  //¼ÇÂ¼ÐèÒªÅÅÐòµÄÏÂ±ê
+    	  //ï¿½ï¿½Â¼ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½
     	  int low=start;
     	  int heigh=end;
-    	 //Ñ­»·ÕÒ±È±ê×¼Êý´óµÄºÍ±È±ê×¼ÊýÐ¡µÄÊý  
+    	 //Ñ­ï¿½ï¿½ï¿½Ò±È±ï¿½×¼ï¿½ï¿½ï¿½ï¿½ÄºÍ±È±ï¿½×¼ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½  
     	 while (low<heigh) {
-    		 //ÓÒ±ßµÄÊý×Ö±ê×¼Êý×Ö´ó
+    		 //ï¿½Ò±ßµï¿½ï¿½ï¿½ï¿½Ö±ï¿½×¼ï¿½ï¿½ï¿½Ö´ï¿½
     		 while (low<heigh&&stard<=arr[heigh]) {
     			 heigh--;
     		 }
-    		 //Ê¹ÓÃÓÒ±ßµÄÊýÌæ»»×ó±ßµÄÊý
+    		 //Ê¹ï¿½ï¿½ï¿½Ò±ßµï¿½ï¿½ï¿½ï¿½æ»»ï¿½ï¿½ßµï¿½ï¿½ï¿½
     		 arr[low]=arr[heigh];
-    		 //Èç¹û×ó±ßµÄÊý×Ö±È±ê×¼ÊýÐ¡
+    		 //ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½Ö±È±ï¿½×¼ï¿½ï¿½Ð¡
     		 while (low<heigh&&arr[low]<=stard) {
     			 low++;
     		 }
     		 arr[heigh]=arr[low];
 		 }
-    	 //°Ñ±ê×¼Êý¸³¸øµÍµÄËùÔÚÎ»ÖÃµÄÔªËØ
+    	 //ï¿½Ñ±ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ãµï¿½Ôªï¿½ï¿½
     	 arr[low]= stard;
-    	 //´¦ÀíËùÓÐÐ¡µÄÊý×Ö
+    	 //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     	 quickSort(arr,start,low);
-    	 //´¦ÀíËùÓÐ´óµÄÊý×Ö
+    	 //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     	 quickSort(arr,low+1,end);
        }
 	}
@@ -84,18 +84,18 @@ public class TestJava {
 	
 	
 	/**
-	 * Description :Ï£¶ûÅÅÐò
+	 * Description :Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ16ÈÕ ÏÂÎç5:51:41
+	 * @date :2019ï¿½ï¿½2ï¿½ï¿½16ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½5:51:41
 	 * @param arr
 	 */
 	public static void shellSort(long[] arr) {
-		//±éÀúËùÓÐ²½³¤
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½
 		for (int d = arr.length/2; d >0; d/=2) {
-			//±éÀúËùÓÐÔªËØ
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
 			for (int i = d; i < arr.length; i++) {
-				//±éÀú×éÄÚµÄËØÓÐÔªËØ
+				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
 				for (int j = i-d; j >=0; j-=d) {
 					if(arr[j]>arr[j+d]) {
 						long tamp=arr[j];
@@ -108,10 +108,10 @@ public class TestJava {
 	}
 
 	/**
-	 * Description :Ã°ÅÝÅÅÐò
+	 * Description :Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ16ÈÕ ÏÂÎç5:51:41
+	 * @date :2019ï¿½ï¿½2ï¿½ï¿½16ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½5:51:41
 	 * @param arr
 	 */
 	public static void maoPaoSort(int[] arr) {
@@ -119,7 +119,7 @@ public class TestJava {
 		for (int i = 0; i < arr.length - 1; i++) {
 			for (int j = arr.length - 1; j > i; j--) {
 				if (arr[j] < arr[j - 1]) {
-					// ½øÐÐ½»»»
+					// ï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½
 					tmp = arr[j];
 					arr[j] = arr[j - 1];
 					arr[j - 1] = tmp;
@@ -129,10 +129,10 @@ public class TestJava {
 	}
 
 	/**
-	 * Description :Ñ¡ÔñÅÅÐò
+	 * Description :Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ16ÈÕ ÏÂÎç5:52:00
+	 * @date :2019ï¿½ï¿½2ï¿½ï¿½16ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½5:52:00
 	 * @param arr
 	 */
 	public static void selectionSort(int[] arr) {
@@ -152,21 +152,21 @@ public class TestJava {
 	}
 
 	/**
-	 * Description :²åÈëÅÅÐò
+	 * Description :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ16ÈÕ ÏÂÎç5:52:00
+	 * @date :2019ï¿½ï¿½2ï¿½ï¿½16ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½5:52:00
 	 * @param arr
 	 */
 	public static void insertSort(int[] arr) {
 		int temp = 0;
 		for (int i = 1; i < arr.length; i++) {
-			temp = arr[i];// ±£´æÃ¿´ÎÐèÒª²åÈëµÄÄÇ¸öÊý
+			temp = arr[i];// ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½
 			int j;
-			for (j = i; j > 0 && arr[j - 1] > temp; j--) {// Õâ¸ö½ÏÉÏÃæÓÐÒ»¶¨µÄÓÅ»¯
-				arr[j] = arr[j - 1];// °Ñ´óÓÚÐèÒª²åÈëµÄÊýÍùºóÒÆ¶¯¡£×îºó²»´óÓÚtempµÄÊý¾Í¿Õ³öÀ´j
+			for (j = i; j > 0 && arr[j - 1] > temp; j--) {// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Å»ï¿½
+				arr[j] = arr[j - 1];// ï¿½Ñ´ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ó²»´ï¿½ï¿½ï¿½tempï¿½ï¿½ï¿½ï¿½ï¿½Í¿Õ³ï¿½ï¿½ï¿½j
 			}
-			arr[j] = temp;// ½«ÐèÒª²åÈëµÄÊý·ÅÈëÕâ¸öÎ»ÖÃ
+			arr[j] = temp;// ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
 		}
 	}
 
