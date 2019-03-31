@@ -7,7 +7,7 @@ public class TestJava {
 	/**
 	 * Description :asWZ
 	 * 
-	 * @author :WDH
+	 * @author :WDH是按时大V是DVD
 	 * @date :2019��2��16�� ����5:55:11
 	 * @param args
 	 */
