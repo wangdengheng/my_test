@@ -5,10 +5,10 @@ import java.util.Arrays;
 public class TestJava {
 
 	/**
-	 * Description :
+	 * Description :123
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ16ÈÕ ÏÂÎç5:55:11
+	 * @date :2019å¹´2æœˆ16æ—¥ ä¸‹åˆ5:55:11
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -26,9 +26,9 @@ public class TestJava {
 
 	
 	/**
-	 * Description :Ò»µ½Ê®µÄ½×³ËºÍ   
+	 * Description :ä¸€åˆ°åçš„é˜¶ä¹˜å’Œ   
 	 * @author     :WDH
-	 * @date       :2019Äê3ÔÂ23ÈÕ ÏÂÎç5:11:29
+	 * @date       :2019å¹´3æœˆ23æ—¥ ä¸‹åˆ5:11:29
 	 * @return   
 	 */
 	public static int jieChen() {
@@ -45,38 +45,38 @@ public class TestJava {
 	}
 	
 	/**
-	 * Description :¿ìËÙÅÅĞò
+	 * Description :å¿«é€Ÿæ’åº
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ19ÈÕ ÏÂÎç22:37:41
+	 * @date :2019å¹´2æœˆ19æ—¥ ä¸‹åˆ22:37:41
 	 * @param arr
 	 */
 	public static void quickSort(int[] arr,int start,int end) {
        if(start<end) {
-    	  //°ÑÊı×éÖĞµÄµÚ0¸öÊı×Ö×öÎª±ê×¼Êı
+    	  //æŠŠæ•°ç»„ä¸­çš„ç¬¬0ä¸ªæ•°å­—åšä¸ºæ ‡å‡†æ•°
     	  int stard=arr[start];
-    	  //¼ÇÂ¼ĞèÒªÅÅĞòµÄÏÂ±ê
+    	  //è®°å½•éœ€è¦æ’åºçš„ä¸‹æ ‡
     	  int low=start;
     	  int heigh=end;
-    	 //Ñ­»·ÕÒ±È±ê×¼Êı´óµÄºÍ±È±ê×¼ÊıĞ¡µÄÊı  
+    	 //å¾ªç¯æ‰¾æ¯”æ ‡å‡†æ•°å¤§çš„å’Œæ¯”æ ‡å‡†æ•°å°çš„æ•°  
     	 while (low<heigh) {
-    		 //ÓÒ±ßµÄÊı×Ö±ê×¼Êı×Ö´ó
+    		 //å³è¾¹çš„æ•°å­—æ ‡å‡†æ•°å­—å¤§
     		 while (low<heigh&&stard<=arr[heigh]) {
     			 heigh--;
     		 }
-    		 //Ê¹ÓÃÓÒ±ßµÄÊıÌæ»»×ó±ßµÄÊı
+    		 //ä½¿ç”¨å³è¾¹çš„æ•°æ›¿æ¢å·¦è¾¹çš„æ•°
     		 arr[low]=arr[heigh];
-    		 //Èç¹û×ó±ßµÄÊı×Ö±È±ê×¼ÊıĞ¡
+    		 //å¦‚æœå·¦è¾¹çš„æ•°å­—æ¯”æ ‡å‡†æ•°å°
     		 while (low<heigh&&arr[low]<=stard) {
     			 low++;
     		 }
     		 arr[heigh]=arr[low];
 		 }
-    	 //°Ñ±ê×¼Êı¸³¸øµÍµÄËùÔÚÎ»ÖÃµÄÔªËØ
+    	 //æŠŠæ ‡å‡†æ•°èµ‹ç»™ä½çš„æ‰€åœ¨ä½ç½®çš„å…ƒç´ 
     	 arr[low]= stard;
-    	 //´¦ÀíËùÓĞĞ¡µÄÊı×Ö
+    	 //å¤„ç†æ‰€æœ‰å°çš„æ•°å­—
     	 quickSort(arr,start,low);
-    	 //´¦ÀíËùÓĞ´óµÄÊı×Ö
+    	 //å¤„ç†æ‰€æœ‰å¤§çš„æ•°å­—
     	 quickSort(arr,low+1,end);
        }
 	}
@@ -84,18 +84,18 @@ public class TestJava {
 	
 	
 	/**
-	 * Description :Ï£¶ûÅÅĞò
+	 * Description :å¸Œå°”æ’åº
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ16ÈÕ ÏÂÎç5:51:41
+	 * @date :2019å¹´2æœˆ16æ—¥ ä¸‹åˆ5:51:41
 	 * @param arr
 	 */
 	public static void shellSort(long[] arr) {
-		//±éÀúËùÓĞ²½³¤
+		//éå†æ‰€æœ‰æ­¥é•¿
 		for (int d = arr.length/2; d >0; d/=2) {
-			//±éÀúËùÓĞÔªËØ
+			//éå†æ‰€æœ‰å…ƒç´ 
 			for (int i = d; i < arr.length; i++) {
-				//±éÀú×éÄÚµÄËØÓĞÔªËØ
+				//éå†ç»„å†…çš„ç´ æœ‰å…ƒç´ 
 				for (int j = i-d; j >=0; j-=d) {
 					if(arr[j]>arr[j+d]) {
 						long tamp=arr[j];
@@ -108,10 +108,10 @@ public class TestJava {
 	}
 
 	/**
-	 * Description :Ã°ÅİÅÅĞò
+	 * Description :å†’æ³¡æ’åº
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ16ÈÕ ÏÂÎç5:51:41
+	 * @date :2019å¹´2æœˆ16æ—¥ ä¸‹åˆ5:51:41
 	 * @param arr
 	 */
 	public static void maoPaoSort(int[] arr) {
@@ -119,7 +119,7 @@ public class TestJava {
 		for (int i = 0; i < arr.length - 1; i++) {
 			for (int j = arr.length - 1; j > i; j--) {
 				if (arr[j] < arr[j - 1]) {
-					// ½øĞĞ½»»»
+					// è¿›è¡Œäº¤æ¢
 					tmp = arr[j];
 					arr[j] = arr[j - 1];
 					arr[j - 1] = tmp;
@@ -129,10 +129,10 @@ public class TestJava {
 	}
 
 	/**
-	 * Description :Ñ¡ÔñÅÅĞò
+	 * Description :é€‰æ‹©æ’åº
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ16ÈÕ ÏÂÎç5:52:00
+	 * @date :2019å¹´2æœˆ16æ—¥ ä¸‹åˆ5:52:00
 	 * @param arr
 	 */
 	public static void selectionSort(int[] arr) {
@@ -152,21 +152,21 @@ public class TestJava {
 	}
 
 	/**
-	 * Description :²åÈëÅÅĞò
+	 * Description :æ’å…¥æ’åº
 	 * 
 	 * @author :WDH
-	 * @date :2019Äê2ÔÂ16ÈÕ ÏÂÎç5:52:00
+	 * @date :2019å¹´2æœˆ16æ—¥ ä¸‹åˆ5:52:00
 	 * @param arr
 	 */
 	public static void insertSort(int[] arr) {
 		int temp = 0;
 		for (int i = 1; i < arr.length; i++) {
-			temp = arr[i];// ±£´æÃ¿´ÎĞèÒª²åÈëµÄÄÇ¸öÊı
+			temp = arr[i];// ä¿å­˜æ¯æ¬¡éœ€è¦æ’å…¥çš„é‚£ä¸ªæ•°
 			int j;
-			for (j = i; j > 0 && arr[j - 1] > temp; j--) {// Õâ¸ö½ÏÉÏÃæÓĞÒ»¶¨µÄÓÅ»¯
-				arr[j] = arr[j - 1];// °Ñ´óÓÚĞèÒª²åÈëµÄÊıÍùºóÒÆ¶¯¡£×îºó²»´óÓÚtempµÄÊı¾Í¿Õ³öÀ´j
+			for (j = i; j > 0 && arr[j - 1] > temp; j--) {// è¿™ä¸ªè¾ƒä¸Šé¢æœ‰ä¸€å®šçš„ä¼˜åŒ–
+				arr[j] = arr[j - 1];// æŠŠå¤§äºéœ€è¦æ’å…¥çš„æ•°å¾€åç§»åŠ¨ã€‚æœ€åä¸å¤§äºtempçš„æ•°å°±ç©ºå‡ºæ¥j
 			}
-			arr[j] = temp;// ½«ĞèÒª²åÈëµÄÊı·ÅÈëÕâ¸öÎ»ÖÃ
+			arr[j] = temp;// å°†éœ€è¦æ’å…¥çš„æ•°æ”¾å…¥è¿™ä¸ªä½ç½®
 		}
 	}
 
